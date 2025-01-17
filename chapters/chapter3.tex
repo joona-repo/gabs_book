@@ -1,0 +1,41 @@
+\section{Neural Synchronization - Phase, Amplitude, and Cross-Frequency Dynamics}
+
+Neural synchronization, the temporal alignment of oscillatory activity across neuronal populations, is a cornerstone of brain function. It enables efficient communication between regions and supports a wide array of cognitive processes, from attention and perception to memory. This chapter delves into the mechanisms and metrics of synchronization, exploring its critical role in linking local and large-scale neural dynamics.
+
+\subsection*{Phase Synchronization: Capturing Temporal Coordination}
+
+Phase synchronization quantifies the alignment of oscillatory phases between neural signals. The phase of an oscillation reflects its position within a cycle, and the consistency of phase differences between signals is indicative of their synchrony. 
+
+Metrics such as the Phase Locking Value (PLV) are widely used to measure phase synchrony. PLV assesses the consistency of phase differences across observations:
+\begin{equation}
+PLV = \frac{1}{N}\left| \sum_{n=1}^N e^{i\Delta \phi_n} \right|,
+\end{equation}
+where $\Delta \phi_n$ represents the phase difference for the $n$-th observation, and $N$ is the total number of observations. A PLV of 1 indicates perfect synchrony, while a value of 0 reflects randomness. 
+
+Phase synchronization is fundamental to inter-regional communication in the brain. For example, gamma-band synchronization between visual areas V1 and V4 is enhanced during attention tasks, underscoring its role in supporting efficient neural processing.
+
+\subsection*{Amplitude Synchronization: Assessing Signal Strength Relationships}
+
+Amplitude synchronization examines the relationships between the oscillatory envelopes of neural signals, providing insights into large-scale network dynamics. The amplitude envelope, derived through techniques like the Hilbert transform, reflects the instantaneous strength of an oscillatory signal. 
+
+Amplitude correlations often complement phase synchronization analyses, revealing broader network interactions. These metrics have elucidated key insights into the functional organization of the brain, such as large-scale interactions during tasks requiring cognitive coordination.
+
+\subsection*{Cross-Frequency Coupling: Bridging Temporal Scales}
+
+Cross-frequency coupling (CFC) describes interactions between oscillations at different frequencies, highlighting hierarchical coordination in the brain. Key forms of CFC include:
+\begin{itemize}
+    \item \textbf{Phase-Phase Coupling (PPC):} Synchronization of phases across different frequency bands.
+    \item \textbf{Phase-Amplitude Coupling (PAC):} Modulation of the amplitude of a high-frequency oscillation by the phase of a lower-frequency oscillation.
+    \item \textbf{Amplitude-Amplitude Coupling (AAC):} Correlations between the amplitude envelopes of oscillations in different frequency bands.
+\end{itemize}
+PAC, for instance, has been linked to memory encoding, where theta-phase modulates gamma amplitude to facilitate information integration.
+
+\subsection*{Applications and Implications}
+
+Synchronization metrics, such as PLV, amplitude correlations, and CFC measures, are indispensable tools for studying the brain’s dynamic organization. These metrics reveal the mechanisms of neural communication and coordination across spatial and temporal scales. 
+
+Disruptions in synchronization are implicated in various neurological and psychiatric disorders. For instance, abnormal gamma synchronization is observed in epilepsy, while altered phase-amplitude coupling is linked to cognitive deficits in schizophrenia.
+
+\subsection*{Conclusion}
+
+Neural synchronization, encompassing phase and amplitude dynamics, is essential for brain function. By providing a framework for understanding coordination across spatial and temporal scales, this chapter lays the foundation for exploring the broader principles of criticality and adaptability in subsequent chapters. The interplay of synchronization metrics offers a window into the mechanisms underlying cognition and the pathophysiology of brain disorders.

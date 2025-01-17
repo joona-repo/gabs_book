@@ -1,0 +1,51 @@
+% Language and Encoding
+\usepackage[utf8]{inputenc}
+
+% Formatting and Geometry
+\usepackage[a4paper, total={6in, 10.5in}]{geometry}
+\setlength{\parindent}{0pt} % Remove paragraph indentation
+\setlength{\parskip}{1em}  % Adjust the space as desired
+
+% Graphics and Figures
+\usepackage{graphicx}
+\usepackage{subfigure} % For subfigures (consider subcaption if subfigure is deprecated)
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{pdfpages}
+
+% Tables and Arrays
+\usepackage{array}    % For custom column types
+\usepackage{tabularx} % Adjustable-width tables
+\usepackage{booktabs} % Formal table rules
+\usepackage{multirow} % Multi-row cells
+\usepackage{multicol} % Multi-column layouts
+% Define a new column type for footnotesize entries
+\newcolumntype{F}{>{\footnotesize}c} % Centered column
+\newcolumntype{M}[1]{>{\footnotesize\raggedright\arraybackslash}m{#1}} % Left-aligned, fixed width
+
+% Text and Fonts
+\usepackage{xcolor} % Custom colors
+\usepackage{gensymb} % Generic symbols
+\usepackage{amssymb, amsmath} % Math symbols and environments
+\usepackage{matlab-prettifier} % MATLAB code formatting
+
+% Lists and Enumerations
+\usepackage{enumitem} % Customizable lists
+
+% References and Hyperlinks
+\usepackage[backend=biber, sorting=none]{biblatex} % Bibliography management
+\addbibresource{references/chapter1.bib} % Link to the .bib file
+\addbibresource{references/chapter2.bib} % Link to the .bib file
+
+\usepackage{hyperref} % Hyperlinks
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,       % Internal links
+    citecolor=green,      % Bibliography links
+    filecolor=magenta,    % File links
+    urlcolor=cyan         % External links
+}
+
+% Miscellaneous
+\usepackage{pdflscape} % Landscape pages
